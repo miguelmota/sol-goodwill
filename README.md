@@ -1,6 +1,6 @@
 # Goodwill
 
-> A simple Solidity smart contract that allows anyone to donate [testnet] ether to the contract and anyone can request to receive free donated ether.
+> A simple Solidity smart contract that allows anyone to donate [testnet] ether to the contract and anyone [whos' poor] can request to receive some free donated ether.
 
 On Rinkeby testnet
 
