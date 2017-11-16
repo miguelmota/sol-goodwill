@@ -48273,7 +48273,9 @@ var instance = null
 
 var contract = tc(data)
 
-contract.setProvider(web3.currentProvider)
+if (window.web3) {
+  contract.setProvider(web3.currentProvider)
+}
 
 contract.deployed()
 .then(function(_instance) {
@@ -48283,6 +48285,11 @@ contract.deployed()
 donateForm.addEventListener('submit', function(event) {
   event.preventDefault()
   var target = event.target
+
+  if (!window.web3) {
+    alert('web3 is required')
+    return
+  }
 
   instance.donate({
     from: web3.eth.accounts[0],
@@ -48299,6 +48306,11 @@ donateForm.addEventListener('submit', function(event) {
 receiveForm.addEventListener('submit', function(event) {
   event.preventDefault()
   var target = event.target
+
+  if (!window.web3) {
+    alert('web3 is required')
+    return
+  }
 
   instance.receive(web3.toWei(target.receive.value, 'ether'), {from: web3.eth.accounts[0]})
   .then(function() {
