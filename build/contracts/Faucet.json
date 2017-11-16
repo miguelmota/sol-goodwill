@@ -1,0 +1,78 @@
+{
+  "contract_name": "Faucet",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tokenAmountPerRequest",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ethAmountPerRequest",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getEthAndTokens",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_tokenAddr",
+          "type": "address"
+        },
+        {
+          "name": "_tokenAmountPerRequest",
+          "type": "uint256"
+        },
+        {
+          "name": "_ethAmountPerRequest",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "type": "fallback"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b6040516060806102c28339810160405280805191906020018051919060200180519150505b60008054600160a060020a031916600160a060020a038516179055600282905560018190555b5050505b6102558061006d6000396000f3006060604052361561005f5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416631ce02a05811461006357806370a4842d1461008857806385b4cdc6146100ad578063fc0c546a146100c2575b5b5b005b341561006e57600080fd5b6100766100fe565b60405190815260200160405180910390f35b341561009357600080fd5b610076610104565b60405190815260200160405180910390f35b34156100b857600080fd5b61005f61010a565b005b34156100cd57600080fd5b6100d561020d565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b60025481565b60015481565b3373ffffffffffffffffffffffffffffffffffffffff166108fc6001549081150290604051600060405180830381858888f19350505050151561014c57600080fd5b6000805460025473ffffffffffffffffffffffffffffffffffffffff9091169163a9059cbb913391604051602001526040517c010000000000000000000000000000000000000000000000000000000063ffffffff851602815273ffffffffffffffffffffffffffffffffffffffff90921660048301526024820152604401602060405180830381600087803b15156101e457600080fd5b6102c65a03f115156101f557600080fd5b50505060405180519050151561020a57600080fd5b5b565b60005473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a72305820e5812e359c7902f5bf40eb2b03c32950c1e7b99005bca77735c4bb5f56dbf9d40029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1510798651253
+}
